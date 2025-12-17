@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+            grid-template-areas: "one one one"
+                "six two two"
+                "six three four"
+                "five five five";
+
+        }
+
+        .one {
+            grid-area: one;
+            background-color: green;
+        }
+
+        .two {
+            background-color: blue;
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+            background-color: crimson;
+        }
+
+        .four {
+            grid-area: four;
+            background-color: brown;
+        }
+
+        .five {
+            grid-area: five;
+            background-color: aqua;
+        }
+        @media only screen and (max-width:505px){
+            body{
+                grid-template-areas: "one two three"
+                                    "one four four"
+                                    "five five five"
+                                    "six six six";
+            }
+        }
+        @media only screen and (max-width:350px){
+            body{
+                grid-template-areas: "one one one"
+                                    "two two two"
+                                    "three three three"
+                                    "four four four"
+                                    "five five five"
+                                    "six six six";
+            }
+        }
+
+        .six {
+            grid-area: six;
+            background-color: orchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">header</div>
+    <div class="two">content one</div>
+    <div class="three">content two</div>
+    <div class="four">content three</div>
+    <div class="five">footer</div>
+    <div class="six">sidebar</div>
+</body>
+
+</html>
