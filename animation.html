@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @keyframes myAnimation {
+    0%{background-color: red;rotate: 60deg;}
+    10%{background-color: yellow;scale: 2;}
+    20%{background-color: rebeccapurple;rotate:60deg ;}
+    30%{background-color: honeydew;scale: 2;}
+    40%{background-color: blue;rotate: 60deg;}
+    50%{background-color: green;scale: 2;}
+    60%{background-color: red;rotate: 60deg;}
+    70%{background-color: yellow;scale: 2;}
+    80%{background-color: rebeccapurple;rotate:60deg ;}
+    90%{background-color: honeydew;scale: 2;}
+    100%{background-color: blue;rotate: 60deg;}
+    
+        }
+        div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+        }
+</style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>
